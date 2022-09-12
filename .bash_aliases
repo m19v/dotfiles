@@ -1,3 +1,9 @@
+alias h='history'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+
 alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
