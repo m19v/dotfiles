@@ -115,6 +115,7 @@ if has("gui_running")
 endif
 
 colorscheme slate
+hi Search cterm=NONE ctermfg=black ctermbg=yellow
 
 " =================================[ Movement ]=================================
 
