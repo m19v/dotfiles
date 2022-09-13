@@ -68,7 +68,7 @@ set showmatch
 set matchtime=2
 
 set incsearch
-set nohlsearch
+set hlsearch
 
 set wildmode=list:longest,full
 
