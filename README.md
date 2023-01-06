@@ -10,4 +10,7 @@ fzf
 direnv
 Hack Herd Font
 starship
+
+neovim
+vim-plug
 ```
