@@ -1,3 +1,17 @@
+# Default
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME=""
+
+plugins=(
+  git
+  zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+
+# Sources
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
