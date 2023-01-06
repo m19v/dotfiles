@@ -21,8 +21,8 @@ format = """$env_var $all"""
 # old config
 # success_symbol = "[](238)"
 # error_symbol = "[](238)"
-success_symbol = ""
-error_symbol = ""
+# success_symbol = ""
+# error_symbol = ""
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
@@ -34,13 +34,13 @@ disabled = false
 [username]
 style_user = "white"
 style_root = "white"
-format = "[$user]($style) "
+format = "[$user]($style)"
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-format = "on [$hostname](bold yellow) "
+format = "@[$hostname](bold yellow) "
 disabled = false
 
 [directory]
@@ -107,3 +107,7 @@ disabled = true
 [ruby]
 format = "via [ $version]($style) "
 disabled = true
+
+[status]
+format = "[$status]($style)"
+disabled = false
