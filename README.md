@@ -1,6 +1,6 @@
 # dotfiles
 # installation
-
+```shell
 curl
 zsh
 git
@@ -10,3 +10,4 @@ fzf
 direnv
 Hack Herd Font
 starship
+```
