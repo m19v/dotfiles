@@ -1,2 +1,12 @@
 # dotfiles
-My user-specific application configuration files.
+# installation
+
+curl
+zsh
+git
+exa
+zsh-autosuggestions
+fzf
+direnv
+Hack Herd Font
+starship
