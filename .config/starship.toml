@@ -17,7 +17,7 @@ command_timeout = 1000
 format = """$env_var $all"""
 
 # Change the default prompt characters
-[character]
+# [character]
 # old config
 # success_symbol = "[](238)"
 # error_symbol = "[](238)"
@@ -40,11 +40,11 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = "@[$hostname](bold yellow) "
+format = "[@$hostname](bold yellow) "
 disabled = false
 
 [directory]
-truncation_length = 1
+truncation_length = 2
 truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
@@ -72,13 +72,13 @@ modified = " "
 staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
+disabled = true # disabled because of performance
 
 [kubernetes]
 format = 'via [ﴱ $context\($namespace\)](bold purple) '
 disabled = false
 
-# (deactivated because of no space left)
-# 
+# (disabled because of performance)
 [terraform]
 format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
 disabled = true
