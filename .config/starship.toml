@@ -13,8 +13,11 @@ command_timeout = 1000
 # [╭╴](238)$env_var \
 # $all[╰─](238)$character"""
 
-# new config
+# left prompt format
 format = """$env_var $all"""
+
+# right prompt format
+right_format = """$time"""
 
 # Change the default prompt characters
 # [character]
@@ -111,3 +114,8 @@ disabled = true
 [status]
 format = "[$status]($style)"
 disabled = false
+
+[time]
+disabled = false
+format = '[\[$time\]]($style) '
+time_format = '%v %T'
