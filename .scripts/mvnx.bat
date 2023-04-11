@@ -16,7 +16,6 @@ if "%~2" == "--global" (
   setx M2_HOME "%M2_HOME%" /M
 )
 
-:setpath
 set Path=%M2_HOME%\bin;%Path%
 echo flag(s) %~1 %~2 activated.
 echo.
