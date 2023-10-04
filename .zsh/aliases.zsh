@@ -2,6 +2,8 @@
 # ---
 #
 alias k="kubectl"
+alias kx="kubectx"
+alias ks="kubens"
 alias h="helm"
 alias tf="terraform"
 alias a="ansible"
