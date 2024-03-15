@@ -25,6 +25,8 @@ starship
 # EDITORS
 neovim
 vim-plug
+  Install https://github.com/junegunn/vim-plug
+  Run in nvim: PlugInstall
 
 # K8s
 kubectx + kubens
