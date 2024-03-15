@@ -13,7 +13,7 @@ alias dt="datree"
 alias vi='nvim'
 
 # ALIAS COMMANDS
-alias ls="exa --icons --group-directories-first"
-alias ll="exa --icons --group-directories-first -l"
+alias ls="exa --icons --group-directories-first -l"
+alias ll="exa --icons --group-directories-first -la"
 alias g="goto"
 alias grep='grep --color'
