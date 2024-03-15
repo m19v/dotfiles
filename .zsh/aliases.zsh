@@ -10,6 +10,7 @@ alias a="ansible"
 alias ap="ansible-playbook"
 alias dt="datree"
 
+alias vi='nvim'
 
 # ALIAS COMMANDS
 alias ls="exa --icons --group-directories-first"
