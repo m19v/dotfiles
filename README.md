@@ -1,6 +1,8 @@
 # dotfiles
 # installation
 ```shell
+# COMMON TOOLS:
+# -------------
 curl
 zsh
 git
@@ -8,9 +10,29 @@ exa
 zsh-autosuggestions
 fzf
 direnv
+asdf
 Hack Herd Font
-starship
 
+starship
+  curl -sS https://starship.rs/install.sh | sh
+  Add the following to the end of ~/.zshrc:
+    eval "$(starship init zsh)"
+
+# EDITORS
 neovim
 vim-plug
+
+# K8s
+kubectx + kubens
+
+-----------------
+
+sudo apt update
+sudo apt install git
+
+# Create m19v user and group
+
+sudo apt install ansible
+
+See: https://github.com/chelsea/ansible-example-ruby/blob/master/roles/db/tasks/main.yml
 ```
