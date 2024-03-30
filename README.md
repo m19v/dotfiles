@@ -25,6 +25,10 @@ starship
 
 # EDITORS
 neovim
+  sudo add-apt-repository ppa:neovim-ppa/stable -y
+  sudo add-apt-repository ppa:neovim-ppa/unstable -y           # add repo
+  sudo add-apt-repository -r ppa:neovim-ppa/stable             # remove repo
+  sudo apt install neovim
 vim-plug
   Install https://github.com/junegunn/vim-plug
   Run in nvim: PlugInstall
