@@ -1,1 +1,9 @@
-
+[user]
+	name = m19v
+	email = mnineteenv@gmail.com
+	username = m19va
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
