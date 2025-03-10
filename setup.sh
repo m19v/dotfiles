@@ -21,6 +21,8 @@ done
 
 echo "All packages have been installed."
 
+# Create symlinks for existing configurations
+stow .
 
 # Set up completions
 mkdir -p "$HOME/.zfunc
