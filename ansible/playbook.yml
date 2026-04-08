@@ -1,0 +1,25 @@
+---
+- name: System Setup
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Install essential tools
+      become: true
+      apt:
+        name:
+          - neovim
+          - fzf
+          - ripgrep
+          - fd-find
+          - git
+          - curl
+        state: present
+        update_cache: yes
+
+    - name: Install OpenTofu
+      become: true
+      shell: |
+        curl -fsSL https://opentofu.org | sh -s -- --install-method deb
+      args:
+        creates: /usr/bin/tofu
+
