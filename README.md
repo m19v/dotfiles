@@ -8,3 +8,6 @@ To provision a fresh Linux machine with dotfiles, run:
 
 ```bash
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:m19v/dotfiles.git
+sudo sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/local/bin init --apply git@github.com:m19v/dotfiles.git
+```
+```
