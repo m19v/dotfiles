@@ -1,2 +1,5 @@
 README.md
 ansible/
+
+.config/nvim/lazy-repo-config.json
+.config/nvim/.git
