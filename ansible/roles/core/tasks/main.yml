@@ -1,0 +1,11 @@
+- name: Clone fzf repository
+  ansible.builtin.git:
+    repo: https://github.com/junegunn/fzf.git
+    dest: "{{ ansible_env.HOME }}/.fzf"
+    depth: 1
+    update: true
+
+- name: Run fzf installer
+  ansible.builtin.command:
+    cmd: "{{ ansible_env.HOME }}/.fzf/install --all" # --all enables fuzzy completion, key-bindings, and updates your rc files automatically
+    creates: "{{ ansible_env.HOME }}/.fzf.zsh"

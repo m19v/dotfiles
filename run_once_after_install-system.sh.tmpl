@@ -8,5 +8,5 @@ if ! command -v ansible &> /dev/null; then
 fi
 
 # Run the playbook
-ansible-playbook {{ .chezmoi.sourceDir }}/ansible/playbook.yml -i {{ .chezmoi.sourceDir }}/ansible/inventory --ask-become-pass
+sudo ansible-playbook {{ .chezmoi.sourceDir }}/ansible/playbook.yml -i {{ .chezmoi.sourceDir }}/ansible/inventory --ask-become-pass
 
