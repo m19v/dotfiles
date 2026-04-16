@@ -1,0 +1,4 @@
+---
+fzf_repo_url: https://github.com/junegunn/fzf.git
+system_packages:
+  - age

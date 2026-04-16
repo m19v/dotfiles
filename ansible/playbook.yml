@@ -1,7 +1,19 @@
 ---
 - name: Developer Workstation Setup
-  hosts: localhost
-  connection: local
+  hosts: workstations
+  gather_facts: true
+
+  pre_tasks:
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 3600
+      changed_when: false
 
   roles:
     - core
+
+  post_tasks:
+    - name: Notify user to reload shell
+      ansible.builtin.debug:
+        msg: "Reload your shell or run 'exec $SHELL' to use fzf"

@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e
+echo "🚀 Installing Ansible..."
+
+if ! command -v ansible &> /dev/null; then
+    sudo apt update && sudo apt install -y ansible
+fi
+
+echo "✅ Ansible installed"
+
+ANSIBLE_DIR="{{ .chezmoi.sourceDir }}/ansible"
+
+echo "🚀 Installing prerequisites via Ansible..."
+cd "$ANSIBLE_DIR"
+sudo ansible localhost -c local \
+  -m ansible.builtin.include_role \
+  -a name=prereqs \
+  --become --ask-become-pass
+
+echo "✅ Prerequisites installed"

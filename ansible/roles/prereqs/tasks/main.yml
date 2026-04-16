@@ -1,0 +1,6 @@
+---
+- name: Install prerequisites
+  ansible.builtin.apt:
+    name: "{{ prereqs_packages }}"
+    state: present
+    update_cache: true

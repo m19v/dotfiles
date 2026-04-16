@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: m19v
+  description: Setup developer workstation with core tools
+  company: ""
+  license: MIT
+  min_ansible_version: "2.9"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+  galaxy_tags:
+    - development
+    - workstation
+dependencies: []

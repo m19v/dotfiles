@@ -1,12 +1,10 @@
 #!/bin/bash
-# This script runs once after chezmoi applies files
-echo "🚀 Starting Ansible System Setup..."
+set -e
+echo "🚀 Starting system setup..."
 
-# Install Ansible if missing
-if ! command -v ansible &> /dev/null; then
-    sudo apt update && sudo apt install -y ansible
-fi
+ANSIBLE_DIR="{{ .chezmoi.sourceDir }}/ansible"
 
-# Run the playbook
-sudo ansible-playbook {{ .chezmoi.sourceDir }}/ansible/playbook.yml -i {{ .chezmoi.sourceDir }}/ansible/inventory --ask-become-pass
+cd "$ANSIBLE_DIR"
+sudo ansible-playbook playbook.yml -i inventory.ini --ask-become-pass
 
+echo "✅ System setup complete"

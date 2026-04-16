@@ -1,0 +1,4 @@
+---
+fzf_install_path: "{{ ansible_env.HOME }}/.fzf"
+fzf_install_options:
+  - --all
